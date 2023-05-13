@@ -1,0 +1,26 @@
+.jump {
+    opacity: 0;
+    animation: bounce .8s cubic-bezier(0.34, 0.04, 0.55, 1.4) forwards;
+}
+
+.jump:nth-child(2) {
+    animation-delay: .4s;
+}
+
+@keyframes bounce {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media(prefers-reduced-motion) {
+    .jump {
+        animation: none;
+    }
+}
