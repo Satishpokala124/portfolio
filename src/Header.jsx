@@ -6,7 +6,7 @@ export default function Header() {
       <p className={`text-2xl font-medium cursor-default ${HeaderCSS.jump}`}>
         {`Hello there!! I'm`}
       </p>
-      <h1 className={`mt-2 font-bold text-8xl ${HeaderCSS.jump}`}>Satish Pokala</h1>
+      <h1 className={`mt-2 font-bold text-6xl ${HeaderCSS.jump}`}>Satish Pokala</h1>
     </div>
   );
 }
