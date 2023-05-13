@@ -6,6 +6,10 @@ export default {
       colors: {
         dark: '#2C2C2C',
       },
+      fontFamily: {
+        operatormono: ['Operator Mono', 'sans-serif'],
+        operatormonoitalic: ['Operator Mono Italic', 'sans-serif'],
+      },
     },
   },
   plugins: [],

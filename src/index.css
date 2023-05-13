@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Operator Mono';
+    src: url('./assets/fonts/OperatorMono-Book.otf');
+}
+
+@font-face {
+    font-family: 'Operator Mono Italic';
+    src: url('./assets/fonts/OperatorMono-BookItalic.otf');
+}
