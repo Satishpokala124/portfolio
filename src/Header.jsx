@@ -15,7 +15,7 @@ export default function Header() {
       </div>
       <img
         className='absolute z-10 object-cover object-bottom w-full h-full'
-        src='/images/bg-mountains.png'
+        src='/portfolio/images/bg-mountains.png'
         alt='bg-mountains'
       />
     </div>
