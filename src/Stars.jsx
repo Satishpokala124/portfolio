@@ -5,20 +5,38 @@ import { loadFull } from 'tsparticles';
 
 import * as twinkleConfig from 'src/config/twinkle.json';
 
+const getColorConfig = (colorCode) => ({
+  ...twinkleConfig,
+  particles: {
+    ...twinkleConfig.particles,
+    color: {
+      value: colorCode,
+    },
+  },
+});
+
+const redConfig = getColorConfig('#eddca5');
+const orangeConfig = getColorConfig('#fffde1');
+const yellowConfig = getColorConfig('#fff28e');
+const blueConfig = getColorConfig('#b2d3f0');
+
 export default function Stars() {
   const particlesInit = useCallback(async (engine) => {
-    // console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
+    console.log('init');
     await loadFull(engine);
   }, []);
 
   const particlesLoaded = useCallback(async (container) => {
-    console.log(container);
+    console.log('loaded');
   }, []);
 
   return (
-    <Particles id='stars' init={particlesInit} loaded={particlesLoaded} options={twinkleConfig} />
+    <div className='absolute'>
+      <Particles id='white' init={particlesInit} loaded={particlesLoaded} options={twinkleConfig} />
+      <Particles id='red' init={particlesInit} loaded={particlesLoaded} options={redConfig} />
+      <Particles id='orange' init={particlesInit} loaded={particlesLoaded} options={orangeConfig} />
+      <Particles id='yellow' init={particlesInit} loaded={particlesLoaded} options={yellowConfig} />
+      <Particles id='blue' init={particlesInit} loaded={particlesLoaded} options={blueConfig} />
+    </div>
   );
 }

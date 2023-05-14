@@ -2,7 +2,7 @@
     "name": "Twinkle",
     "particles": {
         "number": {
-            "value": 600,
+            "value": 80,
             "density": {
                 "enable": true
             }
@@ -49,7 +49,7 @@
         "twinkle": {
             "particles": {
                 "enable": true,
-                "color": "#000000",
+                "color": "",
                 "frequency": 0.05,
                 "opacity": 1
             },
