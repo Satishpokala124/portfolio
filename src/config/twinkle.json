@@ -30,7 +30,7 @@
                 "max": 2
             },
             "animation": {
-                "enable": true,
+                "enable": false,
                 "speed": 2,
                 "sync": false
             }
@@ -43,13 +43,15 @@
             "width": 1
         },
         "move": {
-            "enable": false,
-            "speed": 2
+            "enable": true,
+            "speed": 0.2,
+            "direction": "top-left",
+            "straight": true
         },
         "twinkle": {
             "particles": {
                 "enable": true,
-                "color": "",
+                "color": "#000000",
                 "frequency": 0.05,
                 "opacity": 1
             },
