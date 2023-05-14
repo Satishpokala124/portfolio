@@ -18,7 +18,7 @@ const getColorConfig = (colorCode) => ({
 const redConfig = getColorConfig('#eddca5');
 const orangeConfig = getColorConfig('#fffde1');
 const yellowConfig = getColorConfig('#fff28e');
-const blueConfig = getColorConfig('#b2d3f0');
+const blueConfig = getColorConfig('#b2d3fd');
 
 export default function Stars() {
   const particlesInit = useCallback(async (engine) => {
