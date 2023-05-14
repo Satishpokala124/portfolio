@@ -100,5 +100,8 @@
     },
     "background": {
         "color": ""
+    },
+    "fullScreen": {
+        "enable": false
     }
 }

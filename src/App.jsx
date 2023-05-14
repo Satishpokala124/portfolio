@@ -1,11 +1,10 @@
 import Header from 'src/Header';
-import Stars from 'src/Stars';
 
 function App() {
   return (
-    <div className='relative flex items-center justify-center w-full h-screen gap-4 bg-gradient-to-b from-slate-950 to-sky-950 text-slate-100'>
-      <Stars />
+    <div className='flex flex-col items-center justify-center w-full'>
       <Header />
+      <div className='h-screen'>s</div>
     </div>
   );
 }

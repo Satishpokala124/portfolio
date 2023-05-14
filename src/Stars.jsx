@@ -31,12 +31,43 @@ export default function Stars() {
   }, []);
 
   return (
-    <div className='absolute'>
-      <Particles id='white' init={particlesInit} loaded={particlesLoaded} options={twinkleConfig} />
-      <Particles id='red' init={particlesInit} loaded={particlesLoaded} options={redConfig} />
-      <Particles id='orange' init={particlesInit} loaded={particlesLoaded} options={orangeConfig} />
-      <Particles id='yellow' init={particlesInit} loaded={particlesLoaded} options={yellowConfig} />
-      <Particles id='blue' init={particlesInit} loaded={particlesLoaded} options={blueConfig} />
+    <div className='relative w-full h-full'>
+      <Particles
+        id='white'
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={twinkleConfig}
+        className='absolute w-full h-full'
+      />
+
+      <Particles
+        id='red'
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={redConfig}
+        className='absolute w-full h-full'
+      />
+      <Particles
+        id='orange'
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={orangeConfig}
+        className='absolute w-full h-full'
+      />
+      <Particles
+        id='yellow'
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={yellowConfig}
+        className='absolute w-full h-full'
+      />
+      <Particles
+        id='blue'
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={blueConfig}
+        className='absolute w-full h-full'
+      />
     </div>
   );
 }
