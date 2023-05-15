@@ -5,15 +5,15 @@ export default function Header() {
   return (
     <div className='relative flex items-center justify-center w-full h-screen -z-10 perspective-10'>
       <div
-        className={`absolute w-full h-full bg-gradient-to-b from-slate-950 to-sky-950 ${HeaderCSS.bgStars}`}
+        className={`absolute w-full h-full bg-gradient-to-b from-slate-950 to-sky-900 ${HeaderCSS.bgStars}`}
       >
         <Stars />
       </div>
-      <div className='absolute flex flex-col items-center top-1/3 md:top-1/4'>
-        <p className={`text-2xl cursor-default w-full text-white ${HeaderCSS.jump}`}>
+      <div className='absolute flex flex-col items-center top-1/3'>
+        <p className={`text-2xl md:text-3xl cursor-default w-full text-white ${HeaderCSS.jump}`}>
           {`Hello there!! I'm`}
         </p>
-        <p className={`mt-2 font-bold text-6xl ${HeaderCSS.jump}`}>
+        <p className={`mt-2 font-bold text-5xl md:text-7xl ${HeaderCSS.jump}`}>
           <span className='bg-pan'>Satish Pokala</span>
         </p>
       </div>
