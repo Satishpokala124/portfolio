@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --cyan: #67e8f9;
+    --blue: #1d4ed8;
+}
+
 @font-face {
     font-family: 'Operator Mono';
     src: url('./assets/fonts/OperatorMono-Book.otf');
@@ -10,4 +15,55 @@
 @font-face {
     font-family: 'Operator Mono Italic';
     src: url('./assets/fonts/OperatorMono-BookItalic.otf');
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #fff5 #0005;
+}
+
+html::-webkit-scrollbar {
+    width: .5vw;
+}
+
+@media only screen and (width > 640px) {
+    html::-webkit-scrollbar {
+        width: .4vw;
+    }
+}
+
+@media only screen and (width > 1024px) {
+    html::-webkit-scrollbar {
+        width: .2vw;
+    }
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: #000;
+}
+
+.bg-pan {
+    background: linear-gradient(to right,
+            var(--cyan),
+            var(--blue),
+            var(--cyan));
+    background-clip: text;
+    color: transparent;
+    background-size: 200%;
+    animation: bg-pan 2s linear infinite;
+}
+
+@keyframes bg-pan {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
 }
