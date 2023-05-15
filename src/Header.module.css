@@ -1,6 +1,10 @@
-/* .bgmountains {
-    object-fit: cover;
-} */
+.bgStars {
+    transform: translateZ(-10px) scale(2);
+}
+
+.bgMountains {
+    transform: translateZ(-5px) scale(1.5);
+}
 
 .jump {
     opacity: 0;

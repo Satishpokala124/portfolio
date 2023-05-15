@@ -5,6 +5,8 @@
 :root {
     --cyan: #67e8f9;
     --blue: #1d4ed8;
+    --red: #a10e0e;
+    --pink: #d81d5b;
 }
 
 @font-face {
@@ -17,33 +19,33 @@
     src: url('./assets/fonts/OperatorMono-BookItalic.otf');
 }
 
-html {
+* {
     scrollbar-width: thin;
     scrollbar-color: #fff5 #0005;
 }
 
-html::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: .5vw;
 }
 
 @media only screen and (width > 640px) {
-    html::-webkit-scrollbar {
+    *::-webkit-scrollbar {
         width: .4vw;
     }
 }
 
 @media only screen and (width > 1024px) {
-    html::-webkit-scrollbar {
+    *::-webkit-scrollbar {
         width: .2vw;
     }
 }
 
-html::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-color: #fff;
     border-radius: 5px;
 }
 
-html::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background-color: #000;
 }
 
@@ -51,7 +53,10 @@ html::-webkit-scrollbar-track {
     background: linear-gradient(to right,
             var(--cyan),
             var(--blue),
-            var(--cyan));
+            /* var(--pink), */
+            /* var(--red), */
+            var(--cyan)
+    );
     background-clip: text;
     color: transparent;
     background-size: 200%;
@@ -66,4 +71,13 @@ html::-webkit-scrollbar-track {
     to {
         background-position: -200% center;
     }
+}
+
+/* For parlallax scrolling effect */
+.perspective-10 {
+    perspective: 10px;
+}
+
+.preserve-3d {
+    transform-style: preserve-3d;
 }
