@@ -1,9 +1,13 @@
 .bgStars {
-    transform: translateZ(-99px) scale(2);
+    transform: translateZ(-199px) scale(3);
 }
 
 .bgMountains {
     transform: translateZ(-50px) scale(1.5);
+}
+
+.title {
+    transform: translateZ(-20px) scale(1.2);
 }
 
 .jump {

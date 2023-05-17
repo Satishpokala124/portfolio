@@ -7,15 +7,24 @@ export default function Header() {
       <div
         className={`absolute w-full h-full bg-gradient-to-b from-slate-950 to-sky-900 ${HeaderCSS.bgStars}`}
       >
+        <img
+          className='transition-all absolute w-32 top-[14%] left-[65%] z-10 md:left-[10%] md:top-[15%] lg:w-36 lg:left-[15%] lg:top-[20%]'
+          src='/portfolio/images/moon-2.png'
+          alt='moon'
+        />
         <Stars />
       </div>
-      <div className='absolute flex flex-col items-center top-1/3'>
-        <p className={`text-2xl md:text-3xl cursor-default w-full text-white ${HeaderCSS.jump}`}>
+      <div
+        className={`transition-all absolute flex flex-col items-center top-1/3 ${HeaderCSS.title}`}
+      >
+        <p
+          className={`transition-all text-2xl md:text-3xl cursor-default w-full text-white ${HeaderCSS.jump}`}
+        >
           {`Hello there!! I'm`}
         </p>
-        <p className={`mt-2 font-bold text-5xl md:text-7xl ${HeaderCSS.jump}`}>
+        <div className={`transition-all mt-2 font-bold text-5xl md:text-7xl ${HeaderCSS.jump}`}>
           <h1 className='bg-pan'>Satish Pokala</h1>
-        </p>
+        </div>
       </div>
       <img
         className={`absolute bottom-1 object-cover w-full h-full ${HeaderCSS.bgMountains}`}
