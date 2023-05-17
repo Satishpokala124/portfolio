@@ -74,8 +74,8 @@
 }
 
 /* For parlallax scrolling effect */
-.perspective-10 {
-    perspective: 10px;
+.perspective-100 {
+    perspective: 100px;
 }
 
 .preserve-3d {

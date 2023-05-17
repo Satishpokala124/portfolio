@@ -3,7 +3,7 @@ import Stars from './Stars';
 
 export default function Header() {
   return (
-    <div className='relative flex items-center justify-center w-full h-screen -z-10 perspective-10'>
+    <div className='relative flex items-center justify-center w-full h-screen -z-10 preserve-3d'>
       <div
         className={`absolute w-full h-full bg-gradient-to-b from-slate-950 to-sky-900 ${HeaderCSS.bgStars}`}
       >
@@ -17,10 +17,20 @@ export default function Header() {
           <span className='bg-pan'>Satish Pokala</span>
         </p>
       </div>
-      <img
+      {/* <img
         className={`absolute object-cover w-full h-full ${HeaderCSS.bgMountains}`}
-        src='images/bg-mountains-2.png'
-        alt='bg-mountains'
+        src='/images/bg-mountains-3.png'
+        alt='bg-mountains-3'
+      /> */}
+      <img
+        className={`absolute bottom-1 object-cover w-full h-full ${HeaderCSS.bgMountains}`}
+        src='/images/bg-mountains-2.png'
+        alt='bg-mountains-2'
+      />
+      <img
+        className='absolute object-cover w-full h-full object-'
+        src='/images/fg-area-2.png'
+        alt='foreground'
       />
     </div>
   );
