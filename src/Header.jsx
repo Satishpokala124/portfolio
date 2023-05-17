@@ -24,12 +24,12 @@ export default function Header() {
       /> */}
       <img
         className={`absolute bottom-1 object-cover w-full h-full ${HeaderCSS.bgMountains}`}
-        src='/images/bg-mountains-2.png'
+        src='/portfolio/images/bg-mountains-2.png'
         alt='bg-mountains-2'
       />
       <img
         className='absolute object-cover w-full h-full object-'
-        src='/images/fg-area-2.png'
+        src='/portfolio/images/fg-area-2.png'
         alt='foreground'
       />
     </div>
