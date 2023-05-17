@@ -81,3 +81,11 @@
 .preserve-3d {
     transform-style: preserve-3d;
 }
+
+.scroll-type-proximity {
+    scroll-snap-type: y proximity;
+}
+
+.scroll-align-start {
+    scroll-snap-align: start;
+}

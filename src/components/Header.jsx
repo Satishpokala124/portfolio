@@ -1,9 +1,9 @@
-import HeaderCSS from 'src/Header.module.css';
-import Stars from './Stars';
+import HeaderCSS from 'src/components/Header.module.css';
+import Stars from 'src/components/Stars';
 
 export default function Header() {
   return (
-    <div className='relative flex items-center justify-center w-full h-screen -z-10 preserve-3d'>
+    <div className='relative flex items-center justify-center w-full h-screen -z-10 preserve-3d scroll-align-start'>
       <div
         className={`absolute w-full h-full bg-gradient-to-b from-slate-950 to-sky-900 ${HeaderCSS.bgStars}`}
       >
@@ -14,14 +14,9 @@ export default function Header() {
           {`Hello there!! I'm`}
         </p>
         <p className={`mt-2 font-bold text-5xl md:text-7xl ${HeaderCSS.jump}`}>
-          <span className='bg-pan'>Satish Pokala</span>
+          <h1 className='bg-pan'>Satish Pokala</h1>
         </p>
       </div>
-      {/* <img
-        className={`absolute object-cover w-full h-full ${HeaderCSS.bgMountains}`}
-        src='/images/bg-mountains-3.png'
-        alt='bg-mountains-3'
-      /> */}
       <img
         className={`absolute bottom-1 object-cover w-full h-full ${HeaderCSS.bgMountains}`}
         src='/portfolio/images/bg-mountains-2.png'
