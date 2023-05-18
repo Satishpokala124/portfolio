@@ -7,11 +7,9 @@ export default function Header() {
       <div
         className={`absolute w-full h-full bg-gradient-to-b from-slate-950 to-sky-900 ${HeaderCSS.bgStars}`}
       >
-        <img
-          className='transition-all absolute w-32 top-[14%] left-[65%] z-10 md:left-[10%] md:top-[15%] lg:w-36 lg:left-[15%] lg:top-[20%]'
-          src='/portfolio/images/moon-2.png'
-          alt='moon'
-        />
+        <div className='before:absolute before:inset-0 before:m-auto before:bg-cyan-100 before:opacity-70 before:blur-3xl before:rounded-full before:aspect-square absolute w-24 top-[14%] left-[65%] z-10 md:left-[10%] md:top-[15%] lg:w-28 lg:left-[15%] lg:top-[20%]'>
+          <img className='transition-all' src='/portfolio/images/moon-2.png' alt='moon' />
+        </div>
         <Stars />
       </div>
       <div
