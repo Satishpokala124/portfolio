@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 :root {
+    --light-cyan: #a5f3fc;
     --cyan: #67e8f9;
+    --dark-cyan: #155e75;
+    --sky: #0ea5e9;
     --blue: #1d4ed8;
+    --indigo: #6366f1;
     --red: #a10e0e;
     --pink: #d81d5b;
 }
@@ -49,43 +53,48 @@
     background-color: #000;
 }
 
-.bg-pan {
-    background: linear-gradient(to right,
-            var(--cyan),
-            var(--blue),
-            /* var(--pink), */
-            /* var(--red), */
-            var(--cyan)
-    );
-    background-clip: text;
-    color: transparent;
-    background-size: 200%;
-    animation: bg-pan 2s linear infinite;
-}
-
-@keyframes bg-pan {
-    from {
-        background-position: 0% center;
+@layer components {
+    .bg-pan {
+        background: linear-gradient(to right,
+                var(--cyan),
+                var(--blue),
+                var(--cyan)
+        );
+        background-clip: text;
+        color: transparent;
+        background-size: 200%;
+        animation: bg-pan 2s linear infinite;
     }
 
-    to {
-        background-position: -200% center;
+    @keyframes bg-pan {
+        from {
+            background-position: 0% center;
+        }
+
+        to {
+            background-position: -200% center;
+        }
     }
-}
 
-/* For parlallax scrolling effect */
-.perspective-100 {
-    perspective: 100px;
-}
+    /* For parlallax scrolling effect */
+    .perspective-100 {
+        perspective: 100px;
+    }
 
-.preserve-3d {
-    transform-style: preserve-3d;
-}
+    .preserve-3d {
+        transform-style: preserve-3d;
+    }
 
-.scroll-type-proximity {
-    scroll-snap-type: y proximity;
-}
+    /* Scroll snapping */
+    .scroll-type-proximity {
+        scroll-snap-type: y proximity;
+    }
 
-.scroll-align-start {
-    scroll-snap-align: start;
+    .scroll-align-start {
+        scroll-snap-align: start;
+    }
+
+    .text-stroke-2 {
+        -webkit-text-stroke: .05rem #fff;
+    }
 }

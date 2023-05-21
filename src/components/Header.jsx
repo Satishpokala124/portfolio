@@ -3,7 +3,7 @@ import Stars from 'src/components/Stars';
 
 export default function Header() {
   return (
-    <div className='relative flex items-center justify-center w-full h-screen -z-10 preserve-3d scroll-align-start'>
+    <div className='relative flex items-center justify-center w-full h-screen -z-10 preserve-3d'>
       <div
         className={`absolute w-full h-full bg-gradient-to-b from-slate-950 to-sky-900 ${HeaderCSS.bgStars}`}
       >
@@ -21,7 +21,7 @@ export default function Header() {
           {`Hello there!! I'm`}
         </p>
         <div className={`transition-all mt-2 font-bold text-5xl md:text-7xl ${HeaderCSS.jump}`}>
-          <h1 className='bg-pan'>Satish Pokala</h1>
+          <h1 className={`bg-pan ${HeaderCSS.textStroke2}`}>Satish Pokala</h1>
         </div>
       </div>
       <img
