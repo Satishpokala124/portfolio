@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Header from 'src/components/Header';
 import ScrollPrompt from './components/ScrollPrompt';
 
