@@ -3,34 +3,34 @@ import Stars from 'src/components/Stars';
 
 export default function Header() {
   return (
-    <div className='relative flex items-center justify-center w-full h-screen -z-10 preserve-3d'>
+    <div className='preserve-3d relative -z-10 flex h-screen w-full items-center justify-center'>
       <div
-        className={`absolute w-full h-full bg-gradient-to-b from-slate-950 to-sky-900 ${HeaderCSS.bgStars}`}
+        className={`absolute h-full w-full bg-gradient-to-b from-slate-950 to-sky-900 ${HeaderCSS.bgStars}`}
       >
-        <div className='before:absolute before:inset-0 before:m-auto before:bg-cyan-100 before:opacity-50 before:blur-2xl before:rounded-full before:aspect-square absolute w-20 top-[14%] left-[65%] z-10 md:left-[10%] md:top-[15%] lg:w-24 lg:left-[15%] lg:top-[20%]'>
+        <div className='absolute left-[65%] top-[14%] z-10 w-20 before:absolute before:inset-0 before:m-auto before:aspect-square before:rounded-full before:bg-cyan-100 before:opacity-50 before:blur-2xl md:left-[10%] md:top-[15%] lg:left-[15%] lg:top-[20%] lg:w-24'>
           <img className='transition-all' src='/portfolio/images/moon-2.png' alt='moon' />
         </div>
         <Stars />
       </div>
       <div
-        className={`transition-all absolute flex flex-col items-center top-1/3 ${HeaderCSS.title}`}
+        className={`absolute top-1/3 flex flex-col items-center transition-all ${HeaderCSS.title}`}
       >
         <p
-          className={`transition-all text-2xl md:text-3xl cursor-default w-full text-white ${HeaderCSS.jump}`}
+          className={`w-full cursor-default text-2xl text-cyan-100 transition-all md:text-3xl ${HeaderCSS.jump}`}
         >
           {`Hello there!! I'm`}
         </p>
-        <div className={`transition-all mt-2 font-bold text-5xl md:text-7xl ${HeaderCSS.jump}`}>
+        <div className={`mt-2 text-5xl font-bold transition-all md:text-7xl ${HeaderCSS.jump}`}>
           <h1 className={`bg-pan ${HeaderCSS.textStroke2}`}>Satish Pokala</h1>
         </div>
       </div>
       <img
-        className={`absolute bottom-1 object-cover w-full h-full ${HeaderCSS.bgMountains}`}
+        className={`absolute bottom-1 h-full w-full object-cover ${HeaderCSS.bgMountains}`}
         src='/portfolio/images/bg-mountains-2.png'
         alt='bg-mountains-2'
       />
       <img
-        className='absolute object-cover w-full h-full object-'
+        className='object- absolute h-full w-full object-cover'
         src='/portfolio/images/fg-area-2.png'
         alt='foreground'
       />

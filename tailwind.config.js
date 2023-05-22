@@ -10,6 +10,12 @@ export default {
         operatormono: ['Operator Mono', 'sans-serif'],
         operatormonoitalic: ['Operator Mono Italic', 'sans-serif'],
       },
+      keyframes: {
+        'scroll-prompt': {
+          '0%, 100%': { top: '.5em' },
+          '50%': { top: '2.3em' },
+        },
+      },
     },
   },
   plugins: [],
