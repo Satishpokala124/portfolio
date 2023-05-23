@@ -1,11 +1,15 @@
 import { useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import Header from 'src/components/Header';
 import ScrollPrompt from './components/ScrollPrompt';
 
+import Loading from 'src/components/Loading';
 import useScrollPrompt from 'src/hooks/useScrollPrompt';
+import { STATUS } from './utils';
 
 function App() {
   const { showScrollPrompt, scrollEventListner } = useScrollPrompt();
+  const starsStatus = useSelector((state) => state.stars.status);
 
   useEffect(() => {
     scrollEventListner();
@@ -13,6 +17,11 @@ function App() {
 
   return (
     <div>
+      {starsStatus !== STATUS.SUCCESS && (
+        <div className='absolute z-50 flex h-screen w-full items-center justify-center bg-black'>
+          <Loading />
+        </div>
+      )}
       <div
         className={`fixed bottom-4 z-50 flex w-full items-center justify-center transition-opacity duration-500 ${
           showScrollPrompt ? 'opacity-100' : 'opacity-0'
