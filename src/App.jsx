@@ -22,13 +22,11 @@ function App() {
           <Loading />
         </div>
       )}
-      <div
-        className={`fixed bottom-4 z-20 flex w-full items-center justify-center transition-opacity duration-500 ${
-          showScrollPrompt ? 'opacity-100' : 'opacity-0'
-        }`}
-      >
-        <ScrollPrompt />
-      </div>
+      {showScrollPrompt && (
+        <div className='pointer-events-none fixed bottom-4 z-20 flex w-full items-center justify-center transition-opacity duration-500'>
+          <ScrollPrompt />
+        </div>
+      )}
       <div
         className='perspective-100 h-screen w-full overflow-y-auto overflow-x-hidden'
         onScroll={schedulePrompt}
