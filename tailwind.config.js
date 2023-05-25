@@ -12,8 +12,8 @@ export default {
       },
       keyframes: {
         'scroll-prompt': {
-          '0%, 100%': { top: '.5em' },
-          '50%': { top: '2.3em' },
+          '0%, 100%': { top: '15%' },
+          '50%': { top: '60%' },
         },
       },
     },
