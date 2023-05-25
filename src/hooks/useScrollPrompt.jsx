@@ -4,7 +4,7 @@ export default function useScrollPrompt() {
   const [id, setId] = useState(null);
   const [showScrollPrompt, setShowScrollPrompt] = useState(false);
 
-  const scrollEventListner = (e) => {
+  const schedulePrompt = (e) => {
     if (id) {
       clearTimeout(id);
       setShowScrollPrompt(false);
@@ -15,5 +15,5 @@ export default function useScrollPrompt() {
     setId(timeOutId);
   };
 
-  return { showScrollPrompt, scrollEventListner };
+  return { showScrollPrompt, schedulePrompt };
 }

@@ -8,11 +8,11 @@ import useScrollPrompt from 'src/hooks/useScrollPrompt';
 import { STATUS } from './utils';
 
 function App() {
-  const { showScrollPrompt, scrollEventListner } = useScrollPrompt();
+  const { showScrollPrompt, schedulePrompt } = useScrollPrompt();
   const starsStatus = useSelector((state) => state.stars.status);
 
   useEffect(() => {
-    scrollEventListner();
+    schedulePrompt();
   }, []);
 
   return (
@@ -31,7 +31,7 @@ function App() {
       </div>
       <div
         className='perspective-100 h-screen w-full overflow-y-auto overflow-x-hidden'
-        onScroll={scrollEventListner}
+        onScroll={schedulePrompt}
       >
         <Header />
         <div className='flex h-screen w-full items-center justify-center bg-black text-4xl font-extrabold text-white sm:text-5xl md:text-6xl lg:text-7xl'>
