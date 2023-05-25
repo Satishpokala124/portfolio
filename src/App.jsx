@@ -23,7 +23,7 @@ function App() {
         </div>
       )}
       <div
-        className={`fixed bottom-4 z-50 flex w-full items-center justify-center transition-opacity duration-500 ${
+        className={`fixed bottom-4 z-20 flex w-full items-center justify-center transition-opacity duration-500 ${
           showScrollPrompt ? 'opacity-100' : 'opacity-0'
         }`}
       >
